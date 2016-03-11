@@ -7,6 +7,8 @@ Description: This C program is a separate source file with the implementation of
              and the matching line. The function does not need to return anything.
 */
 
+#include <stdio.h>
+#include "lookInFile.h"
 
 int lookInFile(/* arguments */) {
   /* code */
