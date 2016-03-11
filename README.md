@@ -1,4 +1,4 @@
-# Matches Project - C Programming
+#C Programming: Matches Project
 
 ``
 matches hi test.py
