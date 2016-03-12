@@ -6,8 +6,8 @@ Description: This is the header file with a function definition called "lookInFi
              given a string called filename and a string called pattern to look for in the file.
 */
 
-#ifndef count_h
-#define count_h
+#ifndef lookInFile_h
+#define lookInFile_h
 
 /* function prototype: provides the name of the function, the number
 of arguments given to the function, and the type of each argument.
