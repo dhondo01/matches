@@ -13,6 +13,8 @@ Description: This is the header file with a function definition called "lookInFi
 of arguments given to the function, and the type of each argument.
 It also provides the return type of the function. */
 
+#include <stdio.h> /* This header file defines input/output routines */
+#include <string.h> /* cstring library: collection of fuctions for string manipulation */
 
 void lookInFile(char* filename);
 
