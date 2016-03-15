@@ -12,7 +12,7 @@ Description: This C program takes just one string and a list of files from the c
 #include <string.h> /* cstring library: collection of fuctions for string manipulation */
 #include "lookInFile.h"
 
-int main(int argc, char const *argv[]) {
+int main(int argc, char *argv[]) {
 /* int main() is the main function where the program execution begins */
 
 	int k;
@@ -22,12 +22,17 @@ int main(int argc, char const *argv[]) {
 		printf("usage: count pattern file1 file2 file3...\n");
 	}
 
-	const char* pattern = argv[1];
+	char* pattern = argv[1];
+	char* filename;
 
 	for (k = 2; k < argc; k++) { // k = 2, if only file
 		/* $ mygrep c *.c */
 		printf("%s\n", pattern);
+		filename = argv[k];
+		lookInFile(filename, pattern);
 	}
+
+	// lookInFile()
 
 	return 0; /* terminates the main() function */
 }
