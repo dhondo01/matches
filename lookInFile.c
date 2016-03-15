@@ -7,14 +7,18 @@ Description: This C program is a separate source file with the implementation of
              and the matching line. The function does not need to return anything.
 */
 
-#include <stdio.h>
+
 #include "lookInFile.h"
+#include <stdio.h>
+#include <string.h>
+
 
 
 /* two arguments: filename, pattern */
 void lookInFile(char* filename, char* pattern) {
 
 	printf("In lookInFile function \n");
+	lookInFile("Hi, it's working so far. \n")
 
 	// FILE* file = fopen(filename, "r");
 
