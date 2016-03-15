@@ -16,6 +16,7 @@ It also provides the return type of the function. */
 #include <stdio.h> /* This header file defines input/output routines */
 #include <string.h> /* cstring library: collection of fuctions for string manipulation */
 
+
 void lookInFile(char* filename, char* pattern);
 
 
