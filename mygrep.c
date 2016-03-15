@@ -15,7 +15,7 @@ Description: This C program takes just one string and a list of files from the c
 int main(int argc, char const *argv[]) {
 /* int main() is the main function where the program execution begins */
 
-  printf("%s\n", argc );
+  printf("Hello, World! \n");
 
   return 0; /* terminates the main() function */
 }
