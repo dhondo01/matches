@@ -3,6 +3,8 @@
 # Date: March 11, 2016
 # Description: This is the Makefile for the project. Makefile is a way to organize code compilation.
 
+
+
 mygrep: mygrep.o lookInFile.o # mygrep is dependent on .o files
 	gcc -o mygrep mygrep.o lookInFile.o
 
@@ -17,6 +19,18 @@ lookInFile.o: lookInFile.c lookInFile.h
 clean:
 	rm *.o
 	rm mygrep
+
+
+
+# ----- DEPENDENCY MAP based on the last time the file was modified -----
+
+# 						mygrep
+# 					    /     \
+# 				 mygrep.o    lookInFile.o
+# 				/       \     /        \
+# 		mygrep.c      lookInFile.h    lookInFile.c
+
+# -----------------------------------------------------------------------
 
 
 # Running the match program on unix machine:
