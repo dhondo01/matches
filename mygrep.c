@@ -26,10 +26,15 @@ int main(int argc, char *argv[]) {
 	char* filename;
 
 	for (k = 2; k < argc; k++) { // k = 2, if only file
-		/* $ mygrep c *.c */
+
 		filename = argv[k];
 		lookInFile(filename, pattern);
 	}
 
 	return 0; /* terminates the main() function */
 }
+
+
+/* 
+	$ mygrep c *.c 
+*/
