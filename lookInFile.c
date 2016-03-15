@@ -17,8 +17,6 @@ Description: This C program is a separate source file with the implementation of
 /* two arguments: filename, pattern */
 void lookInFile(char* filename, char* pattern) {
 
-	// printf("In lookInFile function \n");
-	// lookInFile("Hi, it's working so far. \n", "Another line.");
     
     // getline(): http://c-for-dummies.com/blog/?p=1112
     char *buffer; // pointer called buffer - copy char from a file
@@ -35,8 +33,8 @@ void lookInFile(char* filename, char* pattern) {
         exit(1);
     }
 
-    printf("Type something: ");
     characters = getline(&buffer,&bufsize,file); /* getline returns the numChars */
+    // printf("%zu\n", characters);
 
     while (characters != -1) {
     	/* loop and half: process the buffer */
