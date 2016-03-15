@@ -40,23 +40,15 @@ void lookInFile(char* filename, char* pattern) {
 
     while (characters != -1) {
     	/* loop and half: process the buffer */
-    	printf("%s", buffer);
+    	// printf("%s", buffer);
+    	if (strstr(buffer, pattern)) {
+    		/* code */
+    		printf("%s:%s\n", filename, buffer); /* format string */
+    	}
 
     	/* get the next line, hopefully */
     	characters = getline(&buffer,&bufsize,file);
+
     }
 
-	// int lines = 0;
-	// int numChars = 0;
-	// char line[maxLineLength];
-
-	// int done = readLine(file,line);
-
-	// while (done == 0) {
-	// 	done = readLine(file,line);
-	// 	lines++;
-	// 	numChars = numChars + strlen(line);
-	// }
-
-	// printf("There were %d characters and %d lines in file %s.\n",numChars,lines,filename);
 }

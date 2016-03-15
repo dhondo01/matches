@@ -15,7 +15,19 @@ Description: This C program takes just one string and a list of files from the c
 int main(int argc, char const *argv[]) {
 /* int main() is the main function where the program execution begins */
 
-  lookInFile("mygrep.c", "c");
+	int k;
 
-  return 0; /* terminates the main() function */
+	if (argc < 3) {
+		/* usage statement error */
+		printf("usage: count pattern file1 file2 file3...\n");
+	}
+
+	const char* pattern = argv[1];
+
+	for (k = 2; k < argc; k++) { // k = 2, if only file
+		/* $ mygrep c *.c */
+		printf("%s\n", pattern);
+	}
+
+	return 0; /* terminates the main() function */
 }
