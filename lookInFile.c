@@ -11,7 +11,7 @@ Description: This C program is a separate source file with the implementation of
 #include "lookInFile.h"
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h> /* for malloc and exit */
+#include <stdlib.h> /* for malloc and exit() */
 
 
 /* two arguments: filename, pattern */
@@ -41,7 +41,7 @@ void lookInFile(char* filename, char* pattern) {
     	// printf("%s", buffer);
     	if (strstr(buffer, pattern)) {
     		/* code */
-    		printf("%s:%s\n", filename, buffer); /* format string */
+    		printf("%s:\t%s\n", filename, buffer); /* format string */
     	}
 
     	/* get the next line, hopefully */
