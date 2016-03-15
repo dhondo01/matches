@@ -17,5 +17,5 @@ int main(int argc, char const *argv[]) {
 
   printf("%s\n", argc );
 
-  return 0;
+  return 0; /* terminates the main() function */
 }
