@@ -12,8 +12,8 @@ Description: This C program takes just one string and a list of files from the c
 #include <string.h> /* cstring library: collection of fuctions for string manipulation */
 #include "lookInFile.h"
 
-int main(int argc, char const *argv[]) { /* main is the entry point of this program */
-  /* */
+int main(int argc, char const *argv[]) {
+/* int main() is the main function where the program execution begins */
 
   printf("%s\n", argc );
 
