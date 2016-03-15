@@ -18,7 +18,7 @@ Description: This C program is a separate source file with the implementation of
 void lookInFile(char* filename, char* pattern) {
 
 	printf("In lookInFile function \n");
-	lookInFile("Hi, it's working so far. \n")
+	lookInFile("Hi, it's working so far. \n", "Another line.");
 
 	// FILE* file = fopen(filename, "r");
 
