@@ -15,7 +15,7 @@ Description: This C program takes just one string and a list of files from the c
 int main(int argc, char const *argv[]) {
 /* int main() is the main function where the program execution begins */
 
-  printf("Hello, World! \n");
+  lookInFile("mygrep.c", "c");
 
   return 0; /* terminates the main() function */
 }

@@ -21,5 +21,4 @@ void lookInFile(char* filename, char* pattern);
 
 
 
-
 #endif
