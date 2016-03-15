@@ -13,9 +13,7 @@ Description: This C program takes just one string and a list of files from the c
 #include "lookInFile.h"
 
 int main(int argc, char const *argv[]) { /* main is the entry point of this program */
-  /* strings are array of characters
-   * terminated by the NULL character
-   * which is different from '0' */
+  /* */
 
   printf("%s\n", argc );
 
