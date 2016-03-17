@@ -21,7 +21,7 @@ for filename in "$@"
 do
 	# echo "$filename"
 	count=`mygrep "$pattern" "$filename" | wc | awk '{print $1}'` #backquotes
-	echo $filename:$count "matches"
+	echo $filename: $count "lines matched"
 done
 
 
