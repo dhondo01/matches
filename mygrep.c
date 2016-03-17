@@ -19,13 +19,13 @@ int main(int argc, char *argv[]) {
 
 	if (argc < 3) {
 		/* usage statement error */
-		printf("usage: count pattern file1 file2 file3...\n");
+		printf("usage: mygrep pattern file1 file2 file3...\n");
 	}
-
-	char* pattern = argv[1];
+	
 	char* filename;
+	char* pattern = argv[1];
 
-	for (k = 2; k < argc; k++) { // k = 2, if only file
+	for (k = 2; k < argc; k++) { // 
 
 		filename = argv[k];
 		lookInFile(filename, pattern);

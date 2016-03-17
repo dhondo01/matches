@@ -24,10 +24,10 @@ void lookInFile(char* filename, char* pattern) {
 
 	FILE* file = fopen(filename, "r");
 
-    buffer = (char *)malloc(bufsize * sizeof(char));
+    buffer = (char *)malloc(bufsize * sizeof(char)); // casting
     /* malloc: memory allocation, returns a void pointer */
 
-    if( buffer == NULL) {
+    if( buffer == NULL) { // check if memory can be allocated
         perror("Unable to allocate buffer");
         exit(1);
     }
@@ -38,7 +38,7 @@ void lookInFile(char* filename, char* pattern) {
     while (characters != -1) {
     	/* loop and half: process the buffer */
     	if (strstr(buffer, pattern)) {
-    		printf("%s:%s\n", filename, buffer); /* format string */
+    		printf("%s:%s", filename, buffer); /* format string */
     	}
 
     	/* get the next line, hopefully */
