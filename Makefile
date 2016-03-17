@@ -4,7 +4,7 @@
 # Description: This is the Makefile for the project. Makefile is a way to organize code compilation.
 
 
-
+# COMPILE CODES
 mygrep: mygrep.o lookInFile.o # mygrep is dependent on .o files
 	gcc -o mygrep mygrep.o lookInFile.o
 
@@ -15,7 +15,7 @@ lookInFile.o: lookInFile.c lookInFile.h
 	gcc -c lookInFile.c
 
 
-# Clean up
+# CLEAN UP
 clean:
 	rm *.o
 	rm mygrep

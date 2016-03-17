@@ -11,12 +11,12 @@ Description: This C program is a separate source file with the implementation of
 #include "lookInFile.h"
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h> /* for malloc and exit */
+#include <stdlib.h> /* for malloc and exit() */
 
 
 /* two arguments: filename, pattern */
 void lookInFile(char* filename, char* pattern) {
-    
+
     // getline(): http://c-for-dummies.com/blog/?p=1112
     char *buffer; // pointer called buffer - copy char from a file
     size_t bufsize = 512;
@@ -32,8 +32,8 @@ void lookInFile(char* filename, char* pattern) {
         exit(1);
     }
 
-    printf("Type something: ");
     characters = getline(&buffer,&bufsize,file); /* getline returns the numChars */
+    // printf("%zu\n", characters);
 
     while (characters != -1) {
     	/* loop and half: process the buffer */
