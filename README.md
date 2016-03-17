@@ -1,7 +1,12 @@
 #C Programming: Matches Project
 
 ``
-matches hi test.py
+
+dhondo01@ubuntu:$ matches h *.c
+lookInFile.c: 21 lines matched
+mygrep.c: 12 lines matched
+
+
 ``
 
-It looks for any occurance of "hi" in file test.py
+It looks for any occurance of "h" in the files lookInFile.c and mygrep.c
