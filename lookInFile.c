@@ -17,7 +17,7 @@ Description: This C program is a separate source file with the implementation of
 /* two arguments: filename, pattern */
 void lookInFile(char* filename, char* pattern) {
 
-    
+
     // getline(): http://c-for-dummies.com/blog/?p=1112
     char *buffer; // pointer called buffer - copy char from a file
     size_t bufsize = 512;
@@ -41,7 +41,7 @@ void lookInFile(char* filename, char* pattern) {
     	// printf("%s", buffer);
     	if (strstr(buffer, pattern)) {
     		/* code */
-    		printf("%s:\t%s\n", filename, buffer); /* format string */
+    		printf("%s:%s\n", filename, buffer); /* format string */
     	}
 
     	/* get the next line, hopefully */
