@@ -1,0 +1,32 @@
+# File: matches.sh
+# Author: Dorjee Dhondup
+# Date: March 11, 2016
+# Description: This bash script should invoke mygrep program and counts
+#              the number of lines in a file that matched the input string.
+
+
+#!/bin/bash
+
+
+# USAGE
+# matches pattern file1 file2 file3 ...
+
+# file1: 5 matches
+# file2: 0 matches
+# file3: 10 matches
+
+
+
+# invoke mygrep on each file - iterate over the files
+# SO iteration: http://stackoverflow.com/questions/255898/how-to-iterate-over-arguments-in-bash-script
+
+#Shift command: http://www.freeos.com/guides/lsst/ch04sec14.html
+pattern="$1"
+shift 
+
+for filename in "$@"
+do
+	# echo "$filename"
+	mygrep "$pattern" "$filename"
+done
+
