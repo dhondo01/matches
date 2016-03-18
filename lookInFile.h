@@ -11,7 +11,7 @@ Description: This is the header file with a function definition called "lookInFi
 
 
 #include <stdio.h> /* This header file defines input/output routines */
-#include <string.h> /* cstring library: collection of fuctions for string manipulation */
+#include <string.h> /* cstring library: collection of functions for string manipulation */
 
 
 /* function prototype: provides the name of the function, the number
