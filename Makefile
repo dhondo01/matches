@@ -23,23 +23,17 @@ clean:
 
 
 # ----- DEPENDENCY MAP based on the last time the file was modified -----
-
-# 						mygrep
-# 					    /     \
+#
+# 				         mygrep
+# 				        /     \
 # 				 mygrep.o    lookInFile.o
 # 				/       \     /        \
-# 		mygrep.c      lookInFile.h    lookInFile.c
-
+# 			   mygrep.c    lookInFile.h    lookInFile.c
+#
 # -----------------------------------------------------------------------
 
 
-# Running the match program on unix machine:
-
-# dhondo01@ubuntu:$ make
-# gcc -c mygrep.c 
-# gcc -c lookInFile.c
-# gcc -o mygrep mygrep.o lookInFile.o
-
+# -------- Running the match program on unix machine --------------------
 # dhondo01@ubuntu:$ make
 # gcc -c mygrep.c 
 # gcc -c lookInFile.c
